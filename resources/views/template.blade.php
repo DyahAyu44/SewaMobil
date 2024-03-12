@@ -11,7 +11,7 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">SEWA MOBIL</a>
             <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse">
@@ -26,7 +26,7 @@
                         @else
                         @can('role',['admin','peminjam'])
                             <li class="nav-item">
-                                <a href="{{ route('post') }}" class="nav-link">Data Post</a>
+                                <a href="{{ route('post') }}" class="nav-link">Mobil</a>
                             </li>
                         @endcan
                         @can('role','admin')
